@@ -1,0 +1,72 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-Id="main">
+    <ion-header>
+      <ion-toolbar>
+          <img slot="start" src="assets/logoku.png"/>
+          <h2 slot="end">MENU E-MODUL</h2>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-menu-toggle class="menu" >
+
+          <ion-item routerLink="/dashboard">
+            <ion-icon class="icon" name="home-outline" slot="start"></ion-icon>
+            <ion-label class="label">Home</ion-label>
+          </ion-item>
+
+
+          <ion-item routerLink="/dashboard/petunjuk">
+            <ion-icon class="icon" name="alert-circle-outline" slot="start"></ion-icon>
+            <ion-label class="label">Petunjuk </ion-label>
+          </ion-item>
+
+
+          <ion-item routerLink="/dashboard/pendahuluan">
+            <ion-icon class="icon" name="bulb-outline" slot="start"></ion-icon>
+            <ion-label class="label">Pendahuluan</ion-label>
+          </ion-item>
+
+
+          <ion-item routerLink="/dashboard/kikd">
+            <ion-icon class="icon" name="book-outline" slot="start"></ion-icon>
+            <ion-label class="label">KI & KD</ion-label>
+          </ion-item>
+
+
+          <ion-item routerLink="/dashboard/petakonsep">
+            <ion-icon class="icon" name="map-outline" slot="start"></ion-icon>
+            <ion-label class="label">Peta Konsep</ion-label>
+          </ion-item>
+
+
+          <ion-item routerLink="/dashboard/kegpembelajaran">
+            <ion-icon class="icon" name="reader-outline" slot="start"></ion-icon>
+            <ion-label class="label">Keg. Pembelajaran</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/dashboard/glosarium">
+            <ion-icon class="icon" name="receipt-outline" slot="start"></ion-icon>
+            <ion-label class="label">Glosarium</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/dashboard/daftarpustaka">
+            <ion-icon class="icon" name="document-text-outline" slot="start"></ion-icon>
+            <ion-label class="label">Daftar Pustaka</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/dashboard/profil">
+            <ion-icon class="icon" name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label class="label">Profil</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/home">
+            <ion-label class="label"  style="background-color: #f0c22c; padding: .6rem; text-align: center; color:#000">Keluar</ion-label> 
+            <ion-icon class="icon" name="log-out-outline" slot="end" style="background-color: #f0c22c; padding: .5rem; text-align: center; color:#000"></ion-icon>
+          </ion-item>
+
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

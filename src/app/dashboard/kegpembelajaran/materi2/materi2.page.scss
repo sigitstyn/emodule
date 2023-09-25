@@ -1,0 +1,113 @@
+ion-header{
+ 
+  ion-toolbar{
+    --background: #176B87;
+    ion-title{
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      margin-left: -3rem;
+      color: #EEEEEE;
+    }
+    ion-buttons{
+      color: #F7F1E5;
+    }
+  }
+  ion-segment-button{
+    margin: .7rem .7rem .7rem .7rem;
+    --background: #053B50;
+    border-radius: 20px 20px 20px 20px;
+  --indicator-box-shadow: transparent !important;
+  --background: #d3d0d0;
+  --color: rgba(82, 82, 82, 0.933);
+  --background-checked: #ffc409!important;
+  --color-checked: #000;
+  --indicator-color: #f1c075 !important;
+  
+}
+  .segment-wrapper{
+    --background: #053B50;
+    ion-label{
+      font-size: .77rem;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+}
+
+ion-content{
+  --background: var(--ion-color-dark) url('/assets/bck1.jpg') no-repeat center center/cover;
+  font-family: 'Segoe UI';
+  .correct-answer {
+    color: rgb(6, 112, 6);
+  }
+  
+  .wrong-answer {
+    color: rgb(160, 7, 27);
+  }
+  .soal{
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .pembahasan{
+    background-color:#ececec;
+    padding: 10px;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.5);
+    margin: 15px 0px;
+  }
+  .container-form-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .form-btn {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem 0 1.2rem 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 100px;
+    height: 42px;
+    background-color: #394752;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 5px;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px 0px rgba(57, 71, 82, 0.5);
+  }
+
+  .segment-jenis ion-segment-button {
+    --background: #ffc409;
+    --indicator-box-shadow: transparent !important;
+    --color: #fff;
+    --color-checked: #fff;
+    --indicator-color: #18c45a !important;
+    --background-checked: #e1edf1!important;
+    border-radius: 0.5rem;
+    min-width: 20px; /* Sesuaikan lebar minimum sesuai kebutuhan */
+    margin: 0 0.1rem; /* Sesuaikan margin horizontal sesuai kebutuhan */
+  }
+  
+  .segment-jenis ion-segment-button ion-label {
+    font-size: 0.77rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.8rem 1rem;
+    background-color: #053B50;
+    border-radius: 0.5rem;
+  }
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+}

@@ -1,0 +1,51 @@
+ion-header{
+  ion-toolbar{
+    --background: #176B87;
+    ion-title{
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      margin-left: -3rem;
+      color: #eeeeee;
+    }
+    ion-buttons{
+      color: #eeeeee;
+    }
+  }
+}
+
+ion-content{
+  --background: var(--ion-color-dark) url('/assets/bck.jpg') no-repeat center center/cover;
+  img{
+    height: 150px;
+    justify-content:center ;
+  }
+  .center-vertically-horizontally{
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #053B50;
+    letter-spacing: .1rem;
+  }
+  h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: #053B50;
+    
+  }
+  .center-vertically-horizontally-2{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

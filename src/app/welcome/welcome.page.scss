@@ -1,0 +1,21 @@
+ion-content{
+  --background: var(--ion-color-dark) url('/assets/bck.jpg') no-repeat center center/cover;
+  .center-vertically-horizontally{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .center-vertically-horizontally-2{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  ion-spinner{
+    width: 40px;
+    height: 40px;
+    color: darkgreen;
+}
+}

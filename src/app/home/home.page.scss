@@ -1,0 +1,63 @@
+ion-content {
+  --background: var(--ion-color-dark) url('/assets/bck.jpg') no-repeat center center/cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center-vertically-horizontally {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Ubah untuk mengisi seluruh tinggi layar */
+}
+
+.image-container {
+  text-align: center;/* Spasi antara gambar dan teks header */
+}
+
+img {
+  max-width: 60%; /* Mengatur lebar maksimum gambar menjadi 80% dari lebar parent */
+  max-height: 100vh; /* Mengatur tinggi maksimum gambar menjadi 80% dari tinggi layar */
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 20px; /* Spasi antara teks header dan tombol */
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+#header h1 {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Ganti dengan jenis font yang Anda sukai */
+  font-weight: bold;
+  font-size: 32px; /* Ubah sesuai preferensi Anda */
+  color: #333; /* Ubah warna sesuai preferensi Anda */
+  line-height: 1.2; /* Sesuaikan sesuai preferensi Anda */
+  margin-top: -30px; /* Sesuaikan sesuai preferensi Anda */
+}
+
+#header h2 {
+  font-weight: 500;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 1.3rem;
+  font-family: 'Gill Sans MT';
+  text-align: center;
+  color: darkgreen;
+}
+
+.center-vertically-horizontally-2 {
+  text-align: center;
+  position: absolute;
+  /* Ubah sesuai preferensi Anda */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ion-button {
+  font-weight: bold;
+  font-family: Arial;
+  color: #fff;
+  align-content: center;
+  margin-top: 20px; /* Spasi di atas tombol */
+}

@@ -1,0 +1,77 @@
+ion-header{
+  ion-toolbar{
+    --background: var(--ion-color-dark) url('/assets/bg-2.png') no-repeat center center/cover;
+    padding: 0rem 6rem 6rem 0;
+    ion-title{
+      font-weight: bold;
+      font-size: .8rem;
+      margin-left: -1.2rem;
+      color: #eeeeee;
+    }
+    ion-buttons{
+      color: #eeeeee;
+    }
+  }
+}
+ion-list, ion-item{
+  --background: transparent;
+}
+ion-content{
+  --background: var(--ion-color-dark) url('/assets/bck1.jpg') no-repeat center center/cover;
+}
+
+/* Gaya Tombol Pagination */
+ion-searchbar{
+  padding: 1.2rem .8rem 1.2rem 0.8rem;
+  color: #053B50;
+}
+ion-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+ion-button {
+  margin: 0 10px;
+  font-size: 0.6rem;
+  color:#ccc;
+}
+
+/* Gaya Daftar Kata-kata */
+.kata{
+  padding: 0 25px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;  
+  --background: transparent;
+  font-size: .9rem;
+  color: #4C4B16;
+}
+ion-item {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;  
+  --background: #fff;
+  font-size: .9rem;
+  color: #000;
+}
+
+ion-item:hover {
+  background-color: #f907fc;
+  background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Gaya Deskripsi */
+ion-card {
+ --background: #053B50;
+  font-size: .9rem;
+  color: #eeeeee;
+  margin: -10px 15px 10px 15px;
+}
+
+ion-card-content {
+  text-align: center;
+}
+
+

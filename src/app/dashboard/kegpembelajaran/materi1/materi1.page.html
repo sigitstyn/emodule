@@ -1,0 +1,406 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Usaha dan Daya</ion-title>
+    
+  </ion-toolbar>
+  <ion-segment  class="segment-wrapper" [(ngModel)]="selectTabs" >
+    <ion-segment-button value="0">
+      <ion-label style="padding: 0 1rem 0 1rem;">Materi</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      <ion-label>Rumus Jitu</ion-label>
+    </ion-segment-button>
+    
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="selectTabs === '0'">
+    <ion-card>
+      <ion-card-header color="primary">
+        <ion-card-title style="font-size: 1.2rem;">
+          <b>Usaha dan Daya</b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; ">
+        <p style="text-indent: 1rem;">Usaha adalah energi yang disalurkan gaya ke sebuah benda sehingga benda tersebut bergerak.
+          Usaha atau kerja dalam IPA dilambangkan dengan W dari kata dalam Bahasa Inggris yaitu Work. Usaha dapat bernilai positif, negatif, dan nol (0).
+          </p>
+          <ul>
+            <li>
+              Usaha positif. Usaha yang bernilai positif jika gaya yang dikerjakan searah dengan perpindahan benda. Misalnya kita mendorong meja ke arah kanan, maka meja yang didorong berpindah ke arah kanan juga. Contohnya kuda menarik gerobak ke kanan, gerobaknya juga ikut bergerak ke kanan.
+            </li>
+            <li>
+              Usaha negatif. Usaha yang bernilai negatif apabila gaya yang dikerjakan pada benda tidak searah dengan gerak benda. Contohnya apabila kita menarik gerobak di tanjakan. Karena kita capek atau lelah akhirnya gerobaknya turun ke bawah karena kita sudah tidak kuat lagi menahan gerobaknya.
+            </li>
+            <li>
+              Usaha bernilai nol. Kalau usaha bernilai nol ini artinya tidak ada perpindahan. Bisa dikatakan pula gayanya tegak lurus dengan perpindahan. Contohnya apabila kita mendorong tembok, tembok tidak bergerak atau bergeser.
+            </li>
+          </ul>  
+      </ion-card-content>
+
+    </ion-card>
+    <ion-card>
+      <ion-card-header color="secondary" >
+        <ion-card-subtitle style="font-weight: bold;">
+          Rumus Menghitung Usaha (W)
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content style="text-align: justify;  margin-top: .8rem;">
+          <p style="text-indent: 1rem;">
+            Semakin besar gaya yang digunakan untuk memindahkan benda, semakin besar pula usaha yang dilakukan. Semakin besar perpindahan benda, semakin besar pula usaha yang dilakukan. Berdasarkan pernyataan tersebut dapat disimpulkan bahwa besarnya usaha (W) ditentukan oleh besar gaya yang diberikan pada benda (F) dan besar perpindahannya (Δs).
+            Secara matematis dapat dituliskan sebagai berikut :
+            <br>
+          </p>
+            <p style="font-weight: bold; text-align: center;border: solid 1px; margin: 0 5rem 0 5rem;">W = F ∙ Δs <br></p>
+            <p>dimana:<br>
+            W = usaha (joule)<br>
+            F = gaya (newton)<br>
+            Δs = perpindahan (meter)<br>
+
+            </p><br>
+          <h4 style="font-weight: bold; background-color: #053B50; padding: 8px; color: #EEEEEE;">Contoh Soal dan Pembahasan</h4>
+          <p style="padding: 10px; border: solid 2px;"> Lani mendorong rak dengan gaya sebesar 100 N sehingga rak tersebut berpindah sejauh 10 m, sedangkan Siti mendorong rak lainnya yang sama massa dan ukurannya dengan gaya sebesar 400 N sehingga rak tersebut berpindah sejauh 40 m.
+            Berapakah besar usaha yang dilakukan oleh Lani dan Siti?<br><br>
+            Diketahui:<br>
+            FLani = 100 N ΔsLani = 10 m<br>
+            FSiti = 400 N ΔsSiti = 40 m<br>
+            Ditanya: WLani dan WSiti<br>
+            Jawab:<br>
+            W = F ∙ Δs<br>
+            WLani = 100 N ∙ 10 m = 1.000 J<br>
+            WSiti = 400 N ∙ 40 m = 16.000 J<br>
+            Jadi, besar usaha yang dilakukan oleh gaya dorong Lani adalah 1.000 J dan besar usaha yang dilakukan oleh gaya dorong Siti adalah <b>16.000 J. </b>
+
+          </p>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header color="secondary">
+        <ion-card-subtitle style="font-weight: bold;">
+          Rumus Menghitung Daya (P)
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content style="text-align: justify; margin-top: .8rem;">
+          <p style="text-indent: 1rem;">
+            Daya (P) atau laju energi adalah besarnya energi yang dipergunakan dalam setiap detik, sehingga dapat ditentukan dengan cara membagi besar usaha (W) dengan selang waktunya (t), atau secara matematis dapat dituliskan sebagai berikut.
+            <p style="font-weight: bold; text-align: center;border: solid 1px; margin: 0 5rem 0 5rem;"><b>P = W / t</b><br></p>
+            <p>dimana:<br>
+            P = daya (watt)<br>
+            W = usaha (joule)<br>
+            t = waktu (sekon)<br>
+          </p><br>
+          <h4 style="font-weight: bold; background-color: #053B50; padding: 8px; color: #EEEEEE;">Contoh Soal dan Pembahasan</h4>
+          <p style="padding: 10px; border: solid 2px;">
+            Lani memindahkan rak dengan usaha sebesar 1.000 J dalam waktu 10 sekon, sedangkan Siti memindahkan rak tersebut dengan usaha sebesar 16.000 J dalam waktu 40 sekon.
+            Berapakah daya yang dikeluarkan Lani dan Siti untuk memindahkan rak?<br><br>
+            Diketahui:<br>
+            W Lani = 1.000 J 	t Lani = 10 s<br>
+            W Siti = 16.000 J	t Siti = 40 s<br>
+            Ditanya: PLani dan PSiti<br>
+            Jawab:<br>
+            P = W / t<br>
+            PLani = 1.000 J  /  10 s = 100 watt<br>
+            PSiti = 16.000 J / 40 s =  400 watt<br>
+            Jadi, daya yang dikeluarkan Lani adalah sebesar 100 watt dan Siti adalah sebesar <b>400 watt.</b>
+
+          </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="selectTabs === '1'">
+    <!-- Rumus Usaha -->
+    <ion-card>
+      <ion-card-header color="primary">
+        <ion-card-title style="font-size: 1.2rem;">
+          <b>Rumus Usaha</b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; ">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000;">
+            <img src="./assets/materi/rumus1.png">
+          </div>
+          <!-- No 1 -->
+          <ion-card-header color="secondary" style="margin-top: 1rem;">
+            <ion-card-title style="font-size: .9rem;">
+              <b>Contoh Soal Usaha</b>
+            </ion-card-title>
+          </ion-card-header>
+          
+          <div *ngFor="let quiz of quizzes">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+
+          <!-- No 2 -->
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/rumus2.png">
+          </div>
+          <div *ngFor="let quiz of quizzes2">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+          
+          <!-- No 3 -->
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/rumus3.png">
+          </div>
+          <div *ngFor="let quiz of quizzes3">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+
+          <!-- No 4 -->
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/rumus4.png">
+          </div>
+          <div *ngFor="let quiz of quizzes4">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+
+           <!-- No 5 -->
+          <div *ngFor="let quiz of quizzes5">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+
+      </ion-card-content>
+      
+    </ion-card>
+    
+    <!-- Rumus Usaha -->
+    <ion-card>
+      <ion-card-header color="primary">
+        <ion-card-title style="font-size: 1.2rem;">
+          <b>Rumus Daya</b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; ">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000;">
+            <img src="./assets/materi/rumusdaya.png" style="max-width: 80%;">
+          </div>
+          <!-- No 6 -->
+          <ion-card-header color="secondary" style="margin-top: 1rem;">
+            <ion-card-title style="font-size: .9rem;">
+              <b>Contoh Soal Daya</b>
+            </ion-card-title>
+          </ion-card-header>
+          
+          <div *ngFor="let quiz of quizzes6">
+            <h6 class="soal">{{ quiz.question }}</h6>
+            <ul style="margin-left: -1rem;">
+              <li *ngFor="let option of quiz.options" style="list-style: none;">
+                <label [ngClass]="{
+                  'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                  'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+                }">
+                  <input
+                    type="radio"
+                    name="{{ quiz.question }}"
+                    [value]="option"
+                    (change)="selectOption(quiz.question, option)"
+                    [disabled]="showExplanation"
+                    [checked]="option === userAnswers[quiz.question]"
+                  >
+                  {{ option }}
+                </label>
+              </li>
+            </ul>
+            <div class="pembahasan " *ngIf="showExplanation"  >
+              <p>
+                <b>
+                  Jawaban :
+                </b> {{quiz.answer}}
+              </p>
+              <b>Pembahasan :</b> 
+              <p [innerHTML]="quiz.explanation">
+                
+                <br>
+                {{ quiz.explanation }}
+              </p>
+            </div>
+          </div>
+
+          <!-- No 7 -->
+          
+
+      </ion-card-content>
+      
+    </ion-card>
+
+    <!-- Hasil -->
+    <ion-card>
+          <!-- Submit Button -->
+          <div class="container-form-btn">
+            <button class="form-btn" role="button" (click)="submitQuiz()" [disabled]="showExplanation" >Submit</button>
+          </div>
+          <!-- Score  -->
+          <div *ngIf="showExplanation" class="skor" style="text-align: center; font-size: 1rem; font-weight: bolder; padding: 10px;  background-color: #ffc409; color: #000;">
+            <h3>Hasil Kuis: <br>{{ score }}/
+              {{ quizzes.length + quizzes2.length + quizzes3.length + quizzes4.length + quizzes5.length + quizzes6.length}}</h3>
+            <!-- Reset Button -->
+          <div class="container-form-btn">
+            <button class="form-btn" role="button"  (click)="resetQuiz()" [disabled]="!showExplanation"> <span class="text">Reset</span></button>
+          </div>
+          </div>
+          
+    </ion-card>
+  </div>
+
+  
+</ion-content>

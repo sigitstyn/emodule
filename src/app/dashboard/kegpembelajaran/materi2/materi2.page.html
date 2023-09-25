@@ -1,0 +1,953 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pesawat Sederhana</ion-title>
+    
+  </ion-toolbar>
+  <ion-segment  class="segment-wrapper" [(ngModel)]="selectTabs" >
+    <ion-segment-button value="0">
+      <ion-label style="padding: 0 1rem 0 1rem;">Materi</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="1">
+      <ion-label>Rumus Jitu</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Latihan</ion-label>
+    </ion-segment-button>
+    
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="selectTabs === '0'">
+    <!-- Materi -->
+    <ion-card>
+      <ion-card-header color="primary">
+        <ion-card-title style="font-size: 1.2rem;">
+          <b>Pesawat Sederhana</b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; ">
+        <p style="text-indent: 1rem;">
+          Pesawat atau mesin adalah alat yang membantu orang melakukan pekerjaan dengan lebih mudah. Dalam fisika, Anda melakukan usaha setiap saat ketika Anda menggunakan sebuah gaya untuk memindahkan suatu benda. Skateboard, mobil, sepeda,sekop, perahu, pintu, lampu, dan tangga semua adalah contoh dari mesin. Sedangkan pesawat sederhana merupakan alat yang paling sederhana untuk mempermudah pekerjaan kita, pesawat sederhana yang akan kita bahas kali ini adalah tuas-pengungkit, katrol dan bidang miring. 
+          <br>
+          Pesawat sederhana mempermudah melakukan pekerjaan atau usaha kita diantaranya dengan jalan:</p>
+          <ol style="margin-left: -1rem;">
+            <li>Mengubah arah gaya sebagai contoh saat kita memenaikan bendera pada tiang bendeara ataupun mengangkat air dari sumur dengan menggunakan katrol kita menarik tali yang membelit melingkar pada katrol sehingga tali dengan mudah kita tarik sesuai arah yang kita inginkan.</li>
+            <li>Mengubah jarak tempuh gaya sebagai contoh bayangkan Anda perlu untuk memindahkan kotak berat sampai diatas mobil. Ini akan lebih mudah untuk membawanya melalui bidang miring (Seperti tangga) daripada mengangkatnya lurus ke atas. Akan tetapi saat Anda mengakat kotak menaiki bidang miring itu jarak perjalanan lebih jauh daripada jika Anda melemparkannya lurus ke atas.</li>
+            <li>Memperkecil besar gaya yang dikerjakan sebagai contoh dengan sebuah alat tuas pembuka botol, kita dapat menggunakan gaya yang lebih kecil untuk menarik pembuka botol ke atas dengan jarak yang lebih jauh dan akan menghasilkan perpindahan yang kecil namun gaya bekerja yang lebih besar pada tutup botol. 
+            </li>
+          </ol>  
+        <p style="text-indent: 1rem;">
+           Pesawat sederhana membuat pekerjaan lebih mudah, tetapi mereka tidak mengurangi pekerjaan yang dilakukan atau energi yang dikeluarkan. Jadi usaha yang dikeluarkan tetap sama dalam arti jika jarak perpindahan semakin jauh, maka gaya yang diberikan semakin kecil dan jika gaya yang diberikan semakin besar maka maka besarnya perpindahan semakin kecil. 
+        </p>
+        <p style="text-indent: 1rem;">
+            Pada dasarnya pesawat sederhana adalah untuk memperkecil gaya yang harus diberikan atau mengubah arah gaya yang harus dikerjakan, sehingga mempermudah kerja atau usaha yang harus dilakukan. Dengan mempermudah pekerjaan maka pesawat sederhana dapat mempercepat pekerjaan terselesaikan.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card style="background-color: #ffc409;">
+      <ion-card-header color="dark" >
+        <ion-card-subtitle style="font-weight: bold;">
+          Jenis-jenis pesawat sederhana 
+        </ion-card-subtitle>
+      </ion-card-header>  
+      <ion-card-content style="background-color: #ffc409;">
+        <ion-segment  class="segment-jenis" [(ngModel)]="selectJenis" style="margin-top: 1rem;">
+          <ion-segment-button value="0">
+            <ion-label >1</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="1">
+            <ion-label >2</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="2">
+            <ion-label >3</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="3">
+            <ion-label >4</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-card-content>
+    </ion-card>
+    <!-- Jenis -->
+    <!-- 1 -->
+    <div *ngIf="selectJenis === '0'">
+      <ion-card class=".tuas-pengungkit">
+        <ion-card-header color="secondary" >
+          <ion-card-subtitle style="font-weight: bold;">
+            1.	Tuas Pengungkit <ion-icon name="arrow-forward-circle-outline" ></ion-icon>
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content style="text-align: justify;  margin-top: .8rem;">
+          
+              <p style="text-indent: 1rem;">
+                Sebuah tuas-pengungkit adalah batang yang berporos dari titik tetap yang disebut titik tumpu. Perhatikan Gambar (6) di bawah ini: 
+              </p>
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <ion-img src="./assets/materi/materi2-1.png" (click)="openModal('./assets/materi/materi2-1.png')"></ion-img>
+              </div>
+
+              <p style="text-indent: 1rem;">
+                Pengungkit  dapat  memudahkan  usaha  dengan  cara menggandakan gaya kuasa dan mengubah arah gaya. Agar kita dapat mengetahui besar gaya yang dilipatgandakan oleh pengungkit maka kita harus menghitung keuntungan mekanisnya. Cara menghitung keuntungan mekanisnya adalah dengan membagi panjang lengan kuasa dengan panjang lengan beban. Panjang lengan kuasa adalah jarak dari tumpuan sampai titik bekerjanya gaya kuasa. Panjang lengan beban adalah jarak dari tumpuan sampai dengan titik bekerjanya gaya beban. Agar kamu mudah memahaminya, perhatikan Gambar 2.8!
+              </p >
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <ion-img src="./assets/materi/materi2-2.png" (click)="openModal('./assets/materi/materi2-2.png')"></ion-img>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <ion-img src="./assets/materi/materi2-3.png" (click)="openModal('./assets/materi/materi2-3.png')"></ion-img>
+              </div>
+            
+        </ion-card-content>
+        
+      </ion-card>
+    </div>
+    <!-- 2 -->
+    <div *ngIf="selectJenis === '1'">
+      <ion-card>
+        <ion-card-header color="secondary">
+          <ion-card-subtitle style="font-weight: bold;">
+            2.	Katrol
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content style="text-align: justify; margin-top: .8rem;">
+            <p style="text-indent: 1rem;">
+              Katrol adalah sebuah tali panjang yang melilit pada sebuah roda biasa digunakan untuk memindahkan suatu benda. Katrol membantu mengangkat atau memindahkan beban. Katrol dapat membuat pekerjaan lebih mudah dengan mengubah arah gaya. Ketika menggunakan katrol untuk memindahkan sesuatu dengan menarik ke bawah, mendapatkan bantuan tambahan dari gravitasi. Bayangkan bukannya mencoba untuk memanjat lurus ke atas tiang bendera dengan bendera di tangan untuk mengibarkannya ke atas ujung tiang bendera!   
+            </p>
+            <p style="text-indent: 1rem;">
+              Katrol juga mengubah besar dan jarak gaya input. Menerapkan gaya input yang lebih kecil namun jarak yang lebih besar dari pada memindahkan beban dengan gaya yang lebih besar dengan jarak yang lebih pendek. Untuk mengangkat atau memindahkan beban lebih berat, dapat menggunakan lebih banyak katrol, tetapi juga perlu menambahkan tali yang lebih panjang. Jika Anda dua kali lipat jumlah katrol, maka harus menggandakan tali dan dua kali lipat panjang jarak lebih dimana gaya harus diterapkan.  
+            </p>
+            <p style="text-indent: 1rem;">
+              Sebuah katrol dapat membuat lebih mudah untuk mengangkat sesuatu benda yang berat dengan gaya kecil yang diaplikasikan dengan jarak tali yang lebih jauh. Ketika menarik atau menerapkan gaya untuk jarak tali yang lebih jauh lebih daripada jarak  beban bergerak, hal tersebut biasanya lebih mudah untuk menambahkan tali yang lebih panjang daripada menerapkan gaya yang lebih besar.  
+            </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <ion-img src="./assets/materi/materi2-4.png" (click)="openModal('./assets/materi/materi2-4.png')"></ion-img>
+            </div>
+            <p style="text-indent: 1rem;">
+              Katrol bebas berfungsi untuk melipatkan gaya, sehingga gaya pada kuasa yang diberikan untuk mengangkat benda menjadi lebih kecil daripada gaya beban. Katrol jenis ini biasanya ditemukan di pelabuhan yang digunakan untuk mengangkat peti kemas. Keuntungan mekanis dari katrol bebas lebih besar dari 1. Pada kenyataannya nilai keuntungan mekanis dari katrol bebas tunggal adalah 2. Hal ini berarti bahwa gaya kuasa 1 N akan mengangkat beban 2 N. Agar gaya kuasa yang diberikan pada benda semakin kecil, maka diperlukan katrol majemuk. Katrol majemuk merupakan gabungan dari katrol tetap dan katrol bebas yang dirangkai menjadi satu sistem yang terpadu. Katrol majemuk biasa digunakan dalam bidang industri untuk mengangkat benda-benda yang berat. Keuntungan mekanis dari katrol majemuk sama dengan jumlah tali yang menyokong berat beban. Misalnya seperti pada Gambar 2.3, gaya kuasa pada katrol majemuk tersebut adalah 4, karena jumlah tali yang mengangkat beban ada 4 (tali kuasa tidak diperhitungkan). 
+            </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px; max-width: 60%;  margin: 0 auto;">
+              <ion-img src="./assets/materi/materi2-5.png" (click)="openModal('./assets/materi/materi2-5.png')"></ion-img>
+            </div>
+            <p style="text-indent: 1rem;">
+              Keuntungan mekanis (KM) adalah bilangan yang menunjukkan berapa kali pesawat sederhana menggandakan gaya. Caranya dengan menghitung besar perbandingan gaya beban dengan gaya kuasa yang diberikan pada benda. Berikut adalah persamaan matematisnya:
+            <p>
+            <p style="text-indent: 1rem;">
+              Tidak semua pesawat sederhana dapat menggandakan gaya. Contohnya adalah katrol tetap tunggal. Katrol ini hanya berfungsi untuk mengubah arah gaya. Oleh karena itu, pada katrol tetap tunggal hanya memiliki keuntungan mekanis sebesar 1. Hal ini disebabkan besarnya gaya kuasa sama dengan gaya beban.
+            </p>
+        </ion-card-content>
+        
+      </ion-card>
+    </div>
+    <!-- 3 -->
+    <div *ngIf="selectJenis === '2'">
+      <ion-card>
+        <ion-card-header color="secondary">
+          <ion-card-subtitle style="font-weight: bold;">
+            3.	Roda berporos
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content style="text-align: justify; margin-top: .8rem;">
+            <p style="text-indent: 1rem;">
+              Roda gigi (gear) dan ban pada sepeda adalah salah satu contoh pesawat sederhana yang tergolong roda berporos. Roda gigi berfungsi sebagai pusat pengatur gerak roda sepeda yang terhubung langsung dengan roda sepeda, sedangkan roda sepeda menerapkan prinsip roda berporos untuk mempercepat gaya saat melakukan perjalanan. Gambar 2.4 menunjukkan roda gigi pada sepeda motor sebagai contoh roda berporos. Selain roda sepeda, contoh penerapan pesawat sederhana jenis roda berporos adalah pada kursi roda, mobil, dan sepatu roda.
+            </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <ion-img src="./assets/materi/materi2-6.png" (click)="openModal('./assets/materi/materi2-6.png')"></ion-img>
+            </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- 4 -->
+    <div *ngIf="selectJenis === '3'">
+      <ion-card>
+        <ion-card-header color="secondary">
+          <ion-card-subtitle style="font-weight: bold;">
+            4.	Bidang miring
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content style="text-align: justify; margin-top: .8rem;">
+            <p style="text-indent: 1rem;">
+              Bidang miring merupakan bidang datar yang diletakkan miring atau membentuk sudut tertentu sehingga dapat memperkecil gaya kuasa. Contoh penerapan bidang miring adalah tangga, sekrup, dan pisau.
+            </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <ion-img src="./assets/materi/materi2-7.png" (click)="openModal('./assets/materi/materi2-7.png')"></ion-img>
+            </div>
+            <p>
+              Perhatikan Gambar 2.6! Keuntungan mekanis bidang miring dapat dihitung sebagai berikut.
+            </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <ion-img src="./assets/materi/materi2-8.png" (click)="openModal('./assets/materi/materi2-8.png')"></ion-img>
+            </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    <!-- Prinsip -->
+    <ion-card>
+      <ion-card-header color="dark" >
+        <ion-card-subtitle style="font-weight: bold;">
+          Prinsip Kerja Pesawat Sederhana pada Sistem Gerak Manusia 
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p style="text-indent: 1rem;">
+          Selain pada peralatan yang biasa kamu gunakan pada kehidupan sehari-hari tersebut, prinsip pesawat sederhana juga ada yang berlaku pada struktur otot dan rangka manusia. Pada saat mengangkat barbel telapak tangan yang menggenggam barbel berperan sebagai gaya beban, titik tumpu berada pada siku (sendi di antara lengan atas dan lengan bawah), dan kuasanya adalah lengan bawah. Titik tumpu berada di antara lengan beban dan kuasa, oleh karena itu lengan disebut sebagai pesawat sederhana pengungkit jenis ketiga. 
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <ion-img src="./assets/materi/materi2-9.png" (click)="openModal('./assets/materi/materi2-9.png')"></ion-img>
+        </div>
+        <p style="text-indent: 1rem;">
+          Prinsip pengungkit juga dapat digunakan untuk menganalisis pola gerak tubuh pada saat bermain bulutangkis.
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <ion-img src="./assets/materi/materi2-10.png" (click)="openModal('./assets/materi/materi2-10.png')"></ion-img>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Info Tokoh -->
+    <ion-card style="--background: var(--ion-color-dark) url('/assets/bck1.jpg') no-repeat center center/cover;">
+      <ion-card-header color="dark" >
+        <ion-card-subtitle style="font-weight: bold;">
+          Info Tokoh
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>  
+       <ion-slides>
+        <!-- 1 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Hero of Alexandrius</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">10-70 SM</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/1.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Menjelaskan cara pembuatan dan penggunaan pesawat sederhana katrol, baji, kerekan, pengungkit. 
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 2 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Archimedes</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">287-212 SM</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/2.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Penemu katrol, pengungkit, dan sekrup.
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 3 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Al Jazari</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">
+                  1136-1206 M
+                </h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/3.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Menciptakan robot yang memanfaatkan prinsip roda berporos dan tuas.
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 4 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Al Khazini</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">12M</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/4.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Menjelaskan sifat pengungkit atau tuas.
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 5 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Robert Hinchliffe</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">1761 M</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/5.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Penemu gunting modern.
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 6 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">King Camp Gillette</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">1855-1932 M</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/6.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Penemu pisau cukur. 
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        <!-- 7 -->
+        <ion-slide>
+          <ion-card>
+            <ion-card-header color="secondary" style="border: #000 1px solid;">
+              <h5 style="font-weight: bold;">Sylvan Nathan Goldman</h5>
+            </ion-card-header>
+            <ion-card-content  style="padding: .5rem 1rem .5rem 1rem; border: #000 1px solid; color: #000; ">
+              <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; background-color: #ffc409; padding: 10px;">
+                <ion-img src="./assets/clock.png" style="width: 30px;"></ion-img>
+                <h6 style="margin-left: 10px; font-weight: bold;">1898-1984</h6>
+              </div>
+              <div class="img-container" style="display: flex; justify-content: center; margin-bottom: 10px; width: 10rem; margin: 0 auto ;">
+                <ion-img src="./assets/info/7.jpg"></ion-img>
+              </div>
+              <div style="padding: 1rem;">
+                <p>
+                  Penemu <i>trolley</i>.
+                </p>
+              </div>
+            </ion-card-content>
+           </ion-card>
+        </ion-slide>
+        
+
+       </ion-slides>
+       <div class="img" style="display: flex; align-items: center; margin-bottom: 10px; justify-content: center;">
+        ----<ion-img src="./assets/swipe.png" style="width: 60px;"></ion-img>
+        <h6 style="margin-left: 10px; font-weight: bold;">Geser ----</h6>
+       </div>
+       
+        
+
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+  
+  <!-- Rumus Jitu -->
+  <div *ngIf="selectTabs === '1'">
+    <ion-card>
+      <ion-card-header color="primary">
+          <ion-card-title style="font-size: 1.2rem;">
+            <b>Rumus Jitu</b>
+          </ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    <!-- Rumus Tuas -->
+    <ion-card>
+      <ion-card-header color="warning">
+        <ion-card-title style="font-size: 1rem;">
+          <b>Rumus Tuas (Pengungkit)</b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; margin-bottom: 10px;">
+        <p>
+          Rumus pada tuas (pengungkit) jenis pertama, kedua, dan ketiga adalah sebagai berikut:
+        </p>  
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/r1.png" width="40%">
+          </div>
+          <p style="margin-bottom: 1rem;">
+            Dimana, <b>w = m . g M</b>  <br><br>
+            Keterangan:<br>
+            w = berat benda (N) <br>
+            lb = lengan beban (m)<br>
+            F = gaya kuasa (N) <br>
+            lk = lengan kuasa (m) <br>
+            m = massa benda (kg) <br>
+            g = percepatan gravitasi (m/s2)
+
+          </p>
+
+          <ion-card-header color="dark">
+            <ion-card-title style="font-size: .8rem; text-align: left;">
+              <b>Rumus Mencari Gaya Pada Tuas (Pengungkit)</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content  style="margin-top: 10px; ">
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <img src="./assets/materi/r2.png" style="margin-bottom: 5px;" width="50%">
+              </div>
+          </ion-card-content>
+
+          <ion-card-header color="dark">
+            <ion-card-title style="font-size: .8rem; text-align: left;">
+              <b>Rumus Mencari Berat Beban Pada Tuas (Pengungkit)</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content  style="margin-top: 10px; ">
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <img src="./assets/materi/r3.png" style="margin-bottom: 5px;" width="50%">
+              </div>
+          </ion-card-content>
+
+          <ion-card-header color="dark">
+            <ion-card-title style="font-size: .8rem; text-align: left;">
+              <b>Rumus Mencari Lengan Kuasa Pada Tuas (Pengungkit)</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content  style="margin-top: 10px; ">
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <img src="./assets/materi/r4.png" style="margin-bottom: 5px;" width="50%">
+              </div>
+          </ion-card-content>
+          
+          <ion-card-header color="dark">
+            <ion-card-title style="font-size: .8rem; text-align: left;">
+              <b>Rumus Mencari Lengan Beban Pada Tuas (Pengungkit)</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content  style="margin-top: 10px; ">
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <img src="./assets/materi/r5.png"width="50%" >
+              </div>
+          </ion-card-content>
+
+          <ion-card-header color="dark">
+            <ion-card-title style="font-size: .8rem; text-align: left;">
+              <b>Rumus Keuntungan Mekanis Tuas (Pengungkit)</b>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content  style="margin-top: 10px; ">
+              <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+                <img src="./assets/materi/r6.png">
+              </div>
+              <p>
+                Keterangan: <br>
+                KM = Keuntungan mekanis (mekanik)
+
+              </p>
+          </ion-card-content>
+        </ion-card-content>
+    </ion-card>
+
+    <!-- Rumus Katrol -->
+    <ion-card>
+      <ion-card-header color="warning">
+        <ion-card-title style="font-size: 1rem;">
+          <b>Rumus Katrol </b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; margin-bottom: 10px;">
+        <p>
+          Pada katrol tetap berlaku rumus tuas, yaitu:
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <img src="./assets/materi/r14.png" style="margin-bottom: 5px;">
+        </div>
+        <p>
+          Karena lengan beban sama dengan lengan kuasa (lb = lk), maka gaya kuasa sama dengan beban yang diangkat, dirumuskan:
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <img src="./assets/materi/r15.png" style="margin-bottom: 5px;">
+        </div>
+        <p>
+          Keterangan: <br>
+          w = berat benda (N)  <br>
+          lb = lengan beban (m) <br>
+          F = gaya kuasa (N) <br>
+          lk = lengan kuasa (m)
+        </p>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Keuntungan Mekanis (Mekanik) Katrol Tetap</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <p style="text-indent: 1rem;">
+            Pada katrol bebas bergerak juga berlaku rumus:
+          </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r16.png" style="margin-bottom: 5px;">
+            </div>
+          <p>
+            Panjang lengan kuasa dua kali panjang lengan beban (lk = 2lb) atau lk/lb = 2.
+          </p>
+        </ion-card-content>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Katrol Bebas Bergerak</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <p style="text-indent: 1rem;">
+            Pada  katrol tetap, panjang lengan kuasa sama dengan lengan beban sehingga keuntungan mekanis (mekanik) pada katrol tetap adalah 1, artinya besar gaya kuasa sama dengan gaya beban.
+            <br>Rumus keuntungan mekanis katrol tetap adalah:
+
+          </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r17.png" style="margin-bottom: 5px;">
+            </div>
+          <p>
+            Keterangan: <br>
+            KM = Keuntungan mekanis (mekanik)
+          </p>
+        </ion-card-content>
+        
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Keuntungan Mekanis Katrol Bebas Bergerak</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <p style="text-indent: 1rem;">
+            Pada katrol bebas, panjang lengan kuasa sama dengan dua kali panjang lengan beban sehingga keuntungan mekanik pada katrol tetap adalah 2, artinya besar gaya kuasa sama dengan setengah dari gaya beban.
+            <br>Rumus keuntungan mekanis (mekanik) katrol bebas bergerak adalah:
+          </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r18.png" style="margin-bottom: 5px;">
+            </div>
+          <p>
+            Keterangan: <br>
+            KM = Keuntungan mekanis (mekanik)
+          </p>
+        </ion-card-content>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Keuntungan Mekanis (Mekanik) Katrol Majemuk/Takal</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <p style="text-indent: 1rem;">
+            Keuntungan mekanis (mekanik) pada katrol majemuk adalah sejumlah tali yang digunakan untuk mengangkat beban.
+            <br> Rumus keuntungan mekanis (mekanik) katrol majemuk adalah:
+
+
+          </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r19.png" style="margin-bottom: 5px;">
+            </div>
+          <p>
+            n = jumlah tali atau jumlah katrol
+          </p>
+        </ion-card-content>
+
+      </ion-card-content>
+    
+    </ion-card>
+
+    <!-- Rumus Bidang Miring -->
+    <ion-card>
+      <ion-card-header color="warning">
+        <ion-card-title style="font-size: 1rem;">
+          <b>Rumus Bidang Miring </b>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content  style="text-align: justify; margin-top: 10px; margin-bottom: 10px;">
+        <p>
+          Besaran-besaran yang terlibat dalam perhitungan bidang miring adalah gaya ( F), panjang lintasan (s), tinggi bidang miring (h), dan berat benda (w = m . g).
+          <br>Perhatikan gambar berikut ini:
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <ion-img src="./assets/materi/r20.png" (click)="openModal('./assets/materi/r20.png')"></ion-img>
+        </div>
+        <p>
+          Berikut ini adalah rumus bidang miring beserta keterangan atau penjelasannya:
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <img src="./assets/materi/r21.png" style="margin-bottom: 5px;">
+        </div>
+        <p>
+          Karena, w = m . g, maka rumus di atas bisa ditulis dengan bentuk:
+        </p>
+        <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+          <img src="./assets/materi/r22.png" style="margin-bottom: 5px;">
+        </div>
+        <p>
+          Keterangan: <br>
+          F = besar gaya (N)  <br>
+          h = tinggi bidang miring (m) <br>
+          s = panjang bidang miring (s) <br>
+          w = berat benda (N) <br>
+          m = massa benda (kg) <br>
+          g = percepatan gravitasi (m/s2)<br>
+          <br>
+          <b>Catatan</b>: Jika pada soal tidak disebutkan secara langsung nilai percepatan gravitasi (g), maka gunakan nilai umum 10 m/s2.
+        </p>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Bidang Miring Mencari Berat Benda  </b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r23.png" style="margin-bottom: 5px;">
+          </div>
+        </ion-card-content>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Bidang Miring Mencari Panjang</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/r24.png" style="margin-bottom: 5px;">
+          </div>
+        </ion-card-content>
+        
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Bidang Miring Mencari Tinggi</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+             <img src="./assets/materi/r25.png" style="margin-bottom: 5px;">
+          </div>
+        </ion-card-content>
+
+        <ion-card-header color="dark">
+          <ion-card-title style="font-size: .8rem; text-align: left;">
+            <b>Rumus Keuntungan Mekanis Bidang Miring</b>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content  style="margin-top: 10px; ">
+          <p style="text-indent: 1rem;">
+            Berdasarkan definisi di atas, maka rumus keuntungan mekanis (mekanik) bidang miring dituliskan dengan persamaan:
+          </p>
+            <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+              <img src="./assets/materi/r26.png" style="margin-bottom: 5px;">
+            </div>
+          <p>
+            Keterangan: <br>
+            KM = Keuntungan mekanis (mekanik) bidang miring
+          </p>
+        </ion-card-content>
+
+      </ion-card-content>
+    
+    </ion-card> 
+  </div>
+
+
+  <!-- Latihan Soal -->
+  <div div *ngIf="selectTabs === '2'">
+    <ion-card >
+      <ion-card-header color="primary">
+        <ion-card-title style="font-size: 1.2rem;">
+          <b>Latihan Soal</b>
+        </ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <!-- No 1-3-->
+        <div *ngFor="let quiz of quizzes">
+          <h6 class="soal">{{ quiz.question }}</h6>
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+
+        <!-- No 4 -->
+        <div *ngFor="let quiz of quizzes2">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/r7.png">
+          </div>
+          <h6 class="soal">{{ quiz.question }}</h6>
+
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+        
+        <!-- No 5 -->
+        <div *ngFor="let quiz of quizzes3">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/r9.jpg">
+          </div>
+          <h6 class="soal">{{ quiz.question }}</h6>
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+
+        <!-- No 6-13 -->
+        <div *ngFor="let quiz of quizzes4">
+          <h6 class="soal">{{ quiz.question }}</h6>
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+
+        <!-- No 14 -->
+        <div *ngFor="let quiz of quizzes5">
+          <div class="img-container" style="display: flex; justify-content: center; border: 1px solid #000; margin-bottom: 10px;">
+            <img src="./assets/materi/r27.jpg">
+          </div>
+          <h6 class="soal">{{ quiz.question }}</h6>
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+
+         <!-- No 15-18 -->
+        <div *ngFor="let quiz of quizzes6">
+          <h6 class="soal">{{ quiz.question }}</h6>
+          <ul style="margin-left: -1rem;">
+            <li *ngFor="let option of quiz.options" style="list-style: none;">
+              <label [ngClass]="{
+                'correct-answer': option === quiz.answer && showExplanation && (option === userAnswers[quiz.question]),
+                'wrong-answer': option === userAnswers[quiz.question] && showExplanation && (option !== quiz.answer)
+              }">
+                <input
+                  type="radio"
+                  name="{{ quiz.question }}"
+                  [value]="option"
+                  (change)="selectOption(quiz.question, option)"
+                  [disabled]="showExplanation"
+                  [checked]="option === userAnswers[quiz.question]"
+                >
+                {{ option }}
+              </label>
+            </li>
+          </ul>
+          <div class="pembahasan " *ngIf="showExplanation"  >
+            <p>
+              <b>
+                Jawaban :
+              </b> {{quiz.answer}}
+            </p>
+            <b>Pembahasan :</b> 
+            <p [innerHTML]="quiz.explanation">
+              
+              <br>
+              {{ quiz.explanation }}
+            </p>
+          </div>
+        </div>
+
+      </ion-card-content>
+  
+    </ion-card>
+
+    <!-- Hasil -->
+    <ion-card>
+          <!-- Submit Button -->
+          <div class="container-form-btn">
+            <button class="form-btn" role="button" (click)="submitQuiz()" [disabled]="showExplanation" >Submit</button>
+          </div>
+          <!-- Score  -->
+          <div *ngIf="showExplanation" class="skor" style="text-align: center; font-size: 1rem; font-weight: bolder; padding: 10px;  background-color: #ffc409; color: #000;">
+            <h3>Hasil Kuis: <br>{{ score }}/
+              {{ quizzes.length + quizzes2.length + quizzes3.length + quizzes4.length + quizzes5.length + quizzes6.length}}</h3>
+            <!-- Reset Button -->
+          <div class="container-form-btn">
+            <button class="form-btn" role="button"  (click)="resetQuiz()" [disabled]="!showExplanation"> <span class="text">Reset</span></button>
+          </div>
+          </div>
+          
+    </ion-card>
+      </div>
+
+  
+</ion-content>

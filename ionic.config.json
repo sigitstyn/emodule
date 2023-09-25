@@ -1,0 +1,7 @@
+{
+  "name": "E-Modul Usaha & Pesawat Sederhana",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

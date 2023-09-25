@@ -1,0 +1,60 @@
+ion-header{
+  ion-toolbar{
+    --background: var(--ion-color-dark) url('/assets/bg-2.png') no-repeat center center/cover;
+    padding: 0rem 6rem 6rem 0;
+    ion-title{
+      font-weight: bold;
+      font-size: .8rem;
+      margin-left: -1.2rem;
+      color: #eeeeee;
+    }
+    ion-buttons{
+      color: #ffffff;
+    }
+  }
+} 
+ion-content{
+  --background: var(--ion-color-dark) url('/assets/bck1.jpg') no-repeat center center/cover;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse; /* Untuk menggabungkan garis-garis border sel */
+  margin-bottom: 10px;
+}
+
+.custom-table td {
+  padding: 8px; /* Sesuaikan sesuai kebutuhan */
+  border: 1px solid #ccc; /* Tambahkan garis border */
+  font-size: .8rem;
+  background: #fff;
+  color: #000;
+}
+ion-item, ion-list{
+  --background: transparent;
+}
+
+  .sect-ki, .sect-kd, .sect-indikator{
+    font-family: 'Gill Sans', sans-serif;
+
+  }
+
+  .ki, 
+  .kd, 
+  .indikator{
+    background-color: #053B50;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right:15px;
+    color: #F7F1E5;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: lighter;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  .sect-ki{
+    margin-top: 10px;
+  }
+

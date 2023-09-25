@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GLOSARIUM</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+  <ion-content>
+    
+    <!-- Tombol Pencarian -->
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="search()" placeholder="Search" showCancelButton="focus" animated>
+    
+  </ion-searchbar>
+
+  
+  <!-- Deskripsi -->
+  
+  <ion-button *ngIf="selectedWord" (click)="hideDescription()" color="warning"><ion-icon name="close-sharp"></ion-icon>Close</ion-button>
+  <ion-card *ngIf="selectedWord">
+    <ion-card-content>
+      <h2>{{ selectedWord.kata }}</h2>
+      <p>{{ selectedWord.deskripsi }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Daftar Kata-kata -->
+  <ion-card class="kata">
+      <ion-item *ngFor="let word of filteredWords" (click)="showDescription(word)">
+        {{ word.kata }}
+      </ion-item>
+    
+  </ion-card>
+  
+  <!-- Tombol Pagination -->
+  <ion-row justify-content-center>
+    <ion-button (click)="prevPage()" [disabled]="currentPage === 1">Sebelumnya</ion-button>
+    <ion-button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= words.length">Selanjutnya</ion-button>
+  </ion-row>
+  
+</ion-content>
